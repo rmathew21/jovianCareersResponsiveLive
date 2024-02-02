@@ -1,4 +1,5 @@
 /* Base styles (extra small devices - mobile) */
+/* CSS rules */
 
 html {
     font-size: 14px;
@@ -25,40 +26,12 @@ h4 { font-size: 1.5rem; }
 h5 { font-size: 1.25rem; }
 h6 { font-size: 1rem; }
 
-/* Small devices (tablets) */
-@media screen and (min-width: 576px) {
-    /* CSS rules */
-}
-
-/* Medium devices (laptops) */
-@media screen and (min-width: 768px) {
-    /* CSS Rules */
-}
-
-/* Large devices (desktops) */
-@media screen and (min-width: 992px) {
-    /* CSS Rules */
-}
-
-/* Extra large devices (large desktops) */
-    @media screen and (min-width: 1200px) {
-        /* CSS Rules */
-    }
-}
-
-/* 
-
-
-
-
-
-
 a {
     text-decoration: none;
     color: #3b82f6;
 }
 
-a:hover {
+a:hover, a:focus {
     color: #1d4ed8;
 }
 
@@ -67,14 +40,67 @@ a:hover {
     margin: 0;
 }
 
+#logoWithText {
+    display: none;
+}
+
+#banner {
+    object-fit: cover;
+    height: 150px;
+    width: 100%;
+}
+
+/* Small devices (tablets) */
+@media screen and (min-width: 576px) {
+
+    html {
+        font-size: 16px;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #logoWithText {
+        display: block;
+    }
+
+    #banner {
+        height: 200px;
+    }
+
+}
+
+/* Medium devices (laptops) */
+@media screen and (min-width: 768px) {
+    #banner {
+        height: 300px;
+    }
+}
+
+/* Large devices (desktops) */
+@media screen and (min-width: 992px) {
+    /* CSS Rules */
+}
+
+/* Extra large devices (large desktops) */
+@media screen and (min-width: 1200px) {
+    /* CSS Rules */
+}
+
+    
+
+/* 
+
+
+
+
+
 #logo {
     height: 30px;
 }
 
-#banner {
-    width: 100%;
-    object-fit: cover;
-}
+
 
 
 h1 {
