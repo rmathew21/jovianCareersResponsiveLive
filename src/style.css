@@ -63,6 +63,38 @@ h1 {
     padding: 8px;
 }
 
+#description {
+    font-size: 1.25rem;
+}
+
+#team {
+    width: 100%;
+}
+#teamImage {
+    border-radius: 5px;
+    width: 100%;
+    
+}
+
+h2 {
+    text-align: center;
+    margin: 12px 0;
+}
+
+#jobs {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+#jobsList {
+    display: block;
+}
+
+#jobsTable {
+    display: none;
+}
+
 /* Small devices (tablets) */
 @media screen and (min-width: 576px) {
 
@@ -86,6 +118,17 @@ h1 {
         margin: 16px 0;
     }
 
+    h2 {
+        text-align: center;
+        margin: 16px 0;
+    }
+
+    #jobs {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0 8px;
+    }
+
 }
 
 /* Medium devices (laptops) */
@@ -98,9 +141,57 @@ h1 {
         margin: 20px 0;
     }
 
+    h2 {
+        text-align: center;
+        margin: 20px 0;
+    }
+
     #about {
         max-width: 800px;
         flex-direction: row;
+    }
+
+    #description {
+        width: 50%;
+        padding-right: 8px;
+    }
+
+    #team {
+        width: 50%;
+    }
+
+    #jobs {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 8px;
+    }
+
+    #jobsList {
+        display: none;
+    }
+
+    #jobsTable {
+        display: table;
+        width: 100%;
+        border: 1px solid gray;
+        border-collapse: collapse;
+    }
+
+    .jobsHeaderRow th{
+        border: 1px solid gray;
+        padding: 8px;
+        background-color: #dbeafe;
+        text-align: center;
+        color: #222222;
+    }
+    
+    .jobsDataRow td {
+        border: 1px solid gray;
+        padding: 8px;
+    }
+    
+    #jobsTable tr:nth-child(odd) {
+        background-color: #eff6ff;
     }
 }
 
@@ -119,11 +210,6 @@ h1 {
     
 
 /* 
-
-
-
-
-
 #logo {
     height: 30px;
 }
@@ -131,58 +217,6 @@ h1 {
 
 
 
-
-
-
-
-#description {
-    width: 50%;
-    padding-right: 8px;
-    font-size: 1.25rem;
-}
-
-#team {
-    width: 50%;
-}
-
-#teamImage {
-    border-radius: 5px;
-    width: 100%;
-}
-
-h2 {
-    text-align: center;
-}
-
-#jobsTable {
-    width: 100%;
-    border: 1px solid gray;
-    border-collapse: collapse;
-}
-
-.jobsHeaderRow th{
-    border: 1px solid gray;
-    padding: 8px;
-    background-color: #dbeafe;
-    text-align: center;
-    color: #222222;
-}
-
-
-.jobsDataRow td {
-    border: 1px solid gray;
-    padding: 8px;
-}
-
-#jobsTable tr:nth-child(odd) {
-    background-color: #eff6ff;
-}
-
-#jobs {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 8px;
-}
 
 #application {
     max-width: 800px;
