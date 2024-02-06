@@ -113,6 +113,69 @@ h2 {
     display: none;
 }
 
+#application {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+.formGroup {
+    margin-top: 8px;
+}
+
+.formGroup label {
+    font-weight: 600;
+    
+}
+
+.formGroup input, select, textarea {
+    width: 90%;
+    padding: 8px;
+    font-size: 1.25rem;
+    margin-top: 4px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.formGroup textarea {
+    
+    font-family: 'Roboto', sans-serif;
+}
+
+.formGroup input[type='checkbox'] {
+    width: 16px;
+    height: 16px;
+}
+
+.formGroup input[type='submit'] {
+    background-color: #3b82f6;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#footer {
+    background-color: ghostwhite;
+    padding: 8px;
+    margin-top: 32px;
+    text-align: center;
+}
+
+#footerLinks {
+    list-style: none;
+    padding-left: 0;
+}
+
+#footerLinks li {
+    margin:  8px 16px;
+    
+}
+
+.copyright {
+    color: #71717a;
+    font-size: 0.87rem;
+} 
+
 /* Small devices (tablets) */
 @media screen and (min-width: 576px) {
 
@@ -145,6 +208,18 @@ h2 {
         max-width: 500px;
         margin: 0 auto;
         padding: 0 8px;
+    }
+
+    .formGroup input, select {
+        width: auto;
+    }
+
+    .formGroup textarea {
+        width: 80%;
+    }
+
+    #footerLinks li {
+        display: inline;
     }
 
 }
@@ -211,6 +286,10 @@ h2 {
     #jobsTable tr:nth-child(odd) {
         background-color: #eff6ff;
     }
+
+    #application {
+        max-width: 800px;
+    }
 }
 
 /* Large devices (desktops) */
@@ -227,76 +306,4 @@ h2 {
 
     
 
-/* 
-#logo {
-    height: 30px;
-}
 
-
-
-
-
-#application {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 8px;
-}
-
-.formGroup {
-    margin-top: 8px;
-}
-
-#applicationForm label {
-    font-weight: 600;
-    
-}
-
-#applicationForm input, select, textarea {
-    padding: 8px;
-    font-size: 1.25rem;
-    margin-top: 4px;
-    border-radius: 5px;
-    border: 1px solid gray;
-}
-
-.formGroup textarea {
-    width: 80%;
-    font-family: 'Roboto', sans-serif;
-}
-
-.formGroup input[type='checkbox'] {
-    width: 16px;
-    height: 16px;
-}
-
-.formGroup input[type='submit'] {
-    background-color: #3b82f6;
-    color: white;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-#footer {
-    background-color: ghostwhite;
-    padding: 8px;
-    margin-top: 32px;
-    text-align: center;
-}
-
-#footerLinks li {
-    list-style: none;
-    display: inline;
-    margin: 0 16px;
-    
-}
-
-.copyright {
-    color: #71717a;
-    font-size: 0.87rem;
-} 
-
-
-
-
-
-  */
