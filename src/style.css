@@ -82,9 +82,27 @@ h2 {
 }
 
 #jobs {
-    max-width: 800px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 0 8px;
+}
+
+.job {
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+.jobTitle {
+    font-size: 1.25em;
+    color: #222222;
+    font-weight: 500;
+}
+
+.jobDetail {
+    color: #777777;
+    margin-top: 2px;
 }
 
 #jobsList {
